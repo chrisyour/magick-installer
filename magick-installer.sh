@@ -16,10 +16,10 @@ download http://surfnet.dl.sourceforge.net/project/libpng/libpng-stable/1.2.39/l
 download http://www.ijg.org/files/jpegsrc.v7.tar.gz
 download http://www.sfr-fresh.com/unix/misc/tiff-3.9.2.tar.gz
 download http://voxel.dl.sourceforge.net/project/wvware/libwmf/0.2.8.4/libwmf-0.2.8.4.tar.gz
-download http://www.littlecms.com/lcms-1.19.tar.gz
+download http://downloads.sourceforge.net/project/lcms/lcms/2.0/lcms2-2.0a.tar.gz
 download http://voxel.dl.sourceforge.net/project/ghostscript/GPL%20Ghostscript/8.70/ghostscript-8.70.tar.gz
 download http://voxel.dl.sourceforge.net/project/gs-fonts/gs-fonts/8.11%20%28base%2035%2C%20GPL%29/ghostscript-fonts-std-8.11.tar.gz
-download http://image_magick.veidrodis.com/image_magick/ImageMagick-6.6.1-5.tar.gz
+download http://image_magick.veidrodis.com/image_magick/ImageMagick-6.6.2-1.tar.gz
 
 tar xzvf freetype-2.3.9.tar.gz
 cd freetype-2.3.9
@@ -62,8 +62,8 @@ sudo make install
 cd ..
 
 
-tar xzvf lcms-1.19.tar.gz
-cd lcms-1.19
+tar xzvf lcms2-2.0a.tar.gz
+cd lcms-2.0
 ./configure
 make
 sudo make install
@@ -82,8 +82,8 @@ tar zxvf ghostscript-fonts-std-8.11.tar.gz
 sudo mv fonts /usr/local/share/ghostscript
 
 
-tar xzvf ImageMagick-6.6.1-5.tar.gz
-cd ImageMagick-6.6.1-5
+tar xzvf ImageMagick-6.6.2-1.tar.gz
+cd ImageMagick-6.6.2-1
 export CPPFLAGS=-I/usr/local/include
 export LDFLAGS=-L/usr/local/lib
 ./configure --prefix=/usr/local --disable-static --with-modules --without-perl --without-magick-plus-plus --with-quantum-depth=8 --with-gs-font-dir=/usr/local/share/ghostscript/fonts
